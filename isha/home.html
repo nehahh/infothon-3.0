@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedChat!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('C:/Users/reddy/OneDrive/Desktop/isha/isha/1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        /* header */
+        header {
+            background-color: rgba(94, 234, 115, 0.8); /* Add transparency */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropbtn {
+            background-color: #4ac163;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .dropbtn:hover {
+            background-color: #45a052;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .content {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .center-text {
+            text-align: center;
+        }
+        .quote {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #4ac163;
+        }
+        .doctor-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .doctor-list li {
+            background-color: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(23, 101, 37, 0.1);
+            text-align: left;
+            transition: transform 0.2s;
+        }
+        .doctor-list li:hover {
+            transform: translateY(-3px);
+        }
+        .doctor-list button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #5eea73;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .doctor-list button:hover {
+            background-color: #4ac163;
+        }
+        .chat-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #5eea73;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(23, 101, 37, 0.1);
+            transition: background-color 0.3s;
+        }
+        .chat-button:hover {
+            background-color: #4ac163;
+        }
+        footer {
+            background-color: rgba(94, 234, 115, 0.8); /* Add transparency */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MedChat!</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="contact.html">Contact</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content center-text">
+            <h2>Welcome to MedChat!</h2>
+            <p>At MedChat, we leverage the power of advanced AI to predict diseases and disorders based on the information you provide through chat and images. Our goal is to offer accurate diagnoses and suggest the appropriate medication for your condition, ensuring you receive the best possible care.</p>
+            <h3 class="quote"><i>Health, Our Priority - Let MedChat Guide You to Wellness</i></h3>
+        </div>
+        <div class="content">
+            <ul class="doctor-list">
+                <li>
+                    <h3>Dermatologist</h3>
+                    <p>Specialty: medical image analysis</p>
+                    <p>Upload picture of your skin and know about your issue.</p>
+                    <a href="http://10.60.210.53:8501" class="chat-button">Upload</a>
+
+                </li>
+                <li>
+                    <h3>Health Care Center</h3>
+                    <p>Specialty:general care</p>
+                    <p>Tell us your Symptoms and Know about the Same!</p>
+        
+                    <a href="http://127.0.0.1:5000" class="chat-button">Enter</a>
+                </li>
+                <li>
+                    <h3>Dr. Yaana Muthamma</h3>
+                    <p>Medical Chat bot</p>
+                    <p> Speak with us and let us know how you feel </p>
+                    <a href="http://127.0.0.1:5000" class="chat-button">Enter</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MedChat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
